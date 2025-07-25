@@ -73,7 +73,7 @@
 // hours = hours % 12;
 // hours = hours ? hours : 12; // the hour '0' should be '12
 // minutes = minutes < 10 ? '0' + minutes : minutes;
-// seconds = seconds < 10 ? '0' + seconds : seconds;   
+// seconds = seconds < 10 ? '0' + seconds : seconds;
 
 // let currentTime = `${hours}: ${minutes}: ${seconds} ${ampm}`;
 // console.log(`Current Time: ${currentTime}`);
@@ -97,17 +97,16 @@
 //     let s = (a + b + c)/2;
 //     let area = Math.sqrt(s * (s - a) * (s - b) * (s - c))
 //     console.log(area);
-    
+
 // }
 
 // calculateAreaOfTriangle(5,6,7)
-
 
 // let rotateString = (str) => {
 //     let temp = [];
 //     // let strArr = str.split('');
 //     return str.split('').reverse().join('');
-    
+
 //     // return temp.join('');
 // }
 
@@ -164,8 +163,8 @@
 //     }
 // }
 
-// console.log(checkSum(20, 30)); 
-// console.log(checkSum(50, 0));  
+// console.log(checkSum(20, 30));
+// console.log(checkSum(50, 0));
 
 // const checkPyPresence = (str) => {
 //     str.split().splice(0, 2, 'o');
@@ -193,7 +192,7 @@
 //     }
 // }
 
-// console.log(findLargest([1, 2, 3, 4, 5, 8])); 
+// console.log(findLargest([1, 2, 3, 4, 5, 8]));
 
 // const is_array = (value) => {
 //     Array.isArray(value) ? console.log('true') : console.log('false');
@@ -213,10 +212,10 @@
 // console.log(cloneArr([1, 2, 3,[4, 5]]) );
 
 // const joinArrElems = (arr) => {
-    
+
 //         let res = '';
 //     for (let i = 0; i < arr.length; i++){
-//      res = res + arr[i];   
+//      res = res + arr[i];
 //     }
 //     return res;
 // }
@@ -236,7 +235,6 @@
 //     }
 //     return a.join('');
 // }
-
 
 // console.log(insertDashes(205468)); // "0-2-4-6-8"
 
@@ -275,12 +273,11 @@
 //             }
 //         }
 //         console.log(`Row ${i + 1}: ${rowArr.join(', ')}`);
-        
+
 //     }
 // }
 
 // printNestedArrayElems([[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]])
-
 
 // const sumOfSquares = (num) => {
 //     let sum = 0;
@@ -300,7 +297,7 @@
 //     let showNum = document.querySelector('.show_num');
 //     showNum.innerText = inputNum;
 //     console.log(inputNum);
-    
+
 // }
 
 // let color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
@@ -317,7 +314,7 @@
 //             else {
 //                 console.log(`Sum of elements at index ${i} and ${j} is: ${sum}`);
 //             }
-            
+
 //         }
 //     }
 //     console.log(sum);
@@ -327,8 +324,6 @@
 // // array2 = [3,5,6,7,8,13];
 
 // sumOfArraysByIndex([1,0,2,3,4], [3,5,6,7,8,13]);
-
-
 
 // // Function to calculate the sum of corresponding elements from two arrays
 // function Arrays_sum(array1, array2) {
@@ -375,22 +370,164 @@
 // // Output the result of the function with sample arrays
 // console.log(Arrays_sum([1, 0, 2, 3, 4], [3, 5, 6, 7, 8, 13]));
 
-const checkSameLetters = (w1, w2) => {
-    if (w1.length !== w2.length){
-        return false;
-    }
-    for (let i = 0; i < w1.length; i++){
-        if (w2.includes(w1[i])){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-}
+// let l1 = window.prompt('Enter array size')
 
-console.log(checkSameLetters('listen', 'silent')); // true
-console.log(checkSameLetters('hello', 'world')); // true
-console.log(checkSameLetters('dog', 'god'));
-console.log(checkSameLetters('mad', 'dam'));
-console.log(checkSameLetters('laptop', 'phone'));
+// let array1 = []
+// let array2 = []
+// for(let i = 0; i < l1; i++){
+//     array1.push(Math.ceil(Math.random() * 10))
+//     array2.push(Math.ceil(Math.random() * 10))
+// }
+
+// let finalArray = array1.concat(array2);
+// console.log(finalArray);
+
+// for(let j = 0; j < finalArray.length - 1; j++){
+//     let min_idx = j;
+//     for(k = j+1; k < finalArray.length; k++){
+//         if(finalArray[min_idx] > finalArray[k]){
+//             min_idx = k;
+//         }
+//     }
+//     let temp = finalArray[j];
+//     finalArray[j] = finalArray[min_idx];
+//     finalArray[min_idx] = temp;
+// }
+// console.log(finalArray);
+
+// const evenLetters = (sentence) => {
+//     let arrayOfStrs = sentence.split(' ')
+//     console.log(arrayOfStrs.filter((item) => item.length%2===0).join(' '));
+
+// }
+
+// evenLetters('It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.');
+
+// const ifPalindrome = (word) => {
+//     let wordArr = word.split('')
+//     let reversedword = [];
+//     for(let i = wordArr.length-1; i>=0; i--){
+//         reversedword.push(wordArr[i])
+//     }
+
+//     if(word.toLowerCase() === reversedword.join('').toLowerCase()){
+//         console.log('Palindrome');
+//     }
+//     else{
+//         console.log('Not Palindrome');
+
+//     }
+// }
+
+// ifPalindrome('madam');
+// ifPalindrome('housewife');
+// ifPalindrome('SOS');
+// ifPalindrome('peep');
+// ifPalindrome('wow');
+// ifPalindrome('examples');
+// ifPalindrome('palindrome');
+
+// const ifArmstrong = (num) => {
+//     let num1 = num;
+//     let num2 = num;
+//     let sum = 0;
+//     let digits = 0;
+//     while (num2 > 0) {
+//         digits = digits + 1;
+//         num2 = parseInt(num2 / 10);
+//     }
+//     console.log(digits)
+//     do {
+//         sum += Math.pow(num1%10, digits);
+//         num1 = parseInt(num1 / 10);
+//     } while(num1 > 0);
+//     return num === sum;
+// }
+
+// console.log(ifArmstrong(123) ? "Armstrong" : "Not Armstrong");
+
+// const isPalindrome = (num) => {
+//     let num1 = num;
+//     let rnum = 0;
+//     while(num1 > 0) {
+//         rnum = ((rnum*10) + (num1%10))
+//         num1 = parseInt(num1/10)
+//     }
+//     return num === rnum;
+// }
+
+// console.log(isPalindrome(123) ? "Palindrome" : "Not Palindrome");
+
+// const binarySearch = (arr, n) => {
+//     arr.sort((a, b) => a - b);
+//   let lowerb = 0;
+//   let upperb = arr.length - 1;
+//   while (lowerb <= upperb) {
+//     let midv =  Math.floor((lowerb + upperb) / 2);
+//     if (arr[midv] == n) {
+//       console.log(`Found at position ${midv}`);
+//     } else if (arr[midv] < n) {
+//       lowerb = midv + 1;
+//     } else if (arr[midv] > n) {
+//       upperb = midv - 1;
+//     }
+//     else{
+//         console.log('Not Found');
+        
+//     }
+//   }
+// };
+
+// console.log(binarySearch([12,33,42,11,56,888,34,900,23,10], 888));
+
+// const binarySearch = (arr, n) => {
+//   arr.sort((a, b) => a - b); // Make sure array is sorted
+
+//   let lowerb = 0;
+//   let upperb = arr.length - 1;
+
+//   while (lowerb <= upperb) {
+//     let midv = Math.floor((lowerb + upperb) / 2);
+
+//     if (arr[midv] === n) {
+//       console.log(`Found ${n} at position ${midv}`);
+//       return midv;
+//     } else if (arr[midv] < n) {
+//       lowerb = midv + 1;
+//     } else {
+//       upperb = midv - 1;
+//     }
+//   }
+
+//   console.log(`${n} not found`);
+//   return -1;
+// };
+
+// // Test with unsorted array
+// console.log(binarySearch([12, 33, 42, 11, 56, 888, 34, 900, 23, 10], 888));
+
+const findLongestPalindromicStr = (str) => {
+  let words = str.split(" ");
+  let palindromeWords = [];
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === words[i].split("").reverse().join("")) {
+      palindromeWords.push(words[i]);
+    }
+  }
+  if (palindromeWords.length === 0) {
+    console.log("No words found!");
+    return;
+  }
+  let longestWord = '';
+  for (let i = 0; i < palindromeWords.length; i++) {
+    if (palindromeWords[i].length > longestWord.length) {
+      longestWord = palindromeWords[i];
+    }
+  }
+  console.log(longestWord);
+};
+
+findLongestPalindromicStr(
+  "racecar Madam Arora saw a and a civic parked near a level radar beside the noon kayak."
+);
+
